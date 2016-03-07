@@ -13,12 +13,12 @@ body {
 }
 
 a {
-	color: white;
+	color: #003048;
   text-decoration: none;
 }
 
 a:hover {
-	color: yellow;
+	color: #246C94;
 	text-decoration: underline;
 	border-style:solid;
 }
@@ -109,30 +109,41 @@ h2 {
 	padding: 30px 0px 240px 0px;
 }
 
-#article {
+#articles {
 		margin-top: 70px;
 		margin-bottom: 50px;
+		margin-left: 80px;
 		width: 65%;
-		float: left;
+		display: inline-block;
 }
 
-.blog-post {
-	margin-left: 80px;
+.panel {
+/*    padding: 50px;*/
+    display: none;
 }
 
-.blog-post p {
+
+.post{
 	color: #606161;
 	line-height: 1.7em;
-	margin-left: 3px;
 	width: 100%;
-	padding: 10px 0px 15px 0px;
+/*	display: none;*/
 }
 
 .blog-link {
 	color: #043049;
 	font-weight: 700;
 	float: right;
+	background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
 }
+
+.blog-link-less {
+	color: #043049;
+	font-weight: 700;
+	float: right;
+}
+
 
 hr {
 	margin-top: 40px;
@@ -194,10 +205,15 @@ p {
 	color: #606161;
 	font-size: 1.2em;
 	line-height: 1.7em;
-	margin-left: 3px;
-	width: 50%;
+/*	width: 50%;*/
 	padding-bottom: 15px;
 }
+
+.more-content {
+  display: none;
+  padding-top: 1rem;
+}
+
 
 /*******************************************
 
@@ -264,10 +280,9 @@ RIGHT RAIL
 *******************************************/
 
 #sidebar {
-	float: left;
 	width: 280px;
 	margin-top: 50px;
-	margin-left: 20px;
+	float: right;
 }
 
 h5 {
