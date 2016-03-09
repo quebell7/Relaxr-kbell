@@ -1,28 +1,64 @@
 // $(function pageReady() {
-// 	$(document).ready(function() {
-//    } );
+	$(document).ready(pageReady);
 
 
+/// article links
 
 
-$(function moreContent (){
-	$(".blog-link").click(function moreContent() {
-       $(".panel").slideToggle("slow")
-   } );
-} );
+	function pageReady() {
 
-$(function hideLink (){
 	$(".blog-link").click(function hideLink() {
-       $(this).hide()
+		 event.preventDefault();
+       $(".blog-link").hide();
+        $(".panel").slideToggle("slow");
    } );
-} );
 
-$(function showLink (){
+
+
 	$(".blog-link-less").click(function showLink() {
-       $(this).hide()
-   } );
-} );
+		event.preventDefault();
+       	$(".panel").slideToggle("slow", showLater);
 
+   } );
+
+
+	function showLater() {
+		$(".blog-link").show();
+	}
+
+
+
+/// sidebar links
+
+
+	$(".sidebar-link").click(function hideSideLink() {
+		event.preventDefault();
+       $(".sidebar-link").hide();
+        $("#side-panel").slideToggle("slow");
+   } );
+
+
+
+	$(".sidebar-close").click(function showSideLink() {
+		event.preventDefault();
+       	$("#side-panel").slideToggle("slow", showCloseLink);
+
+   } );
+
+
+	function showCloseLink() {
+		$(".sidebar-link").show();
+	}
+
+
+
+}
+
+
+
+
+
+	
 // $(function showLink (){
 // 	$(".blog-link-less").click(function showLink() {
 //        $(this).show()

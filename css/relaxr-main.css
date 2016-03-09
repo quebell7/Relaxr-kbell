@@ -122,6 +122,12 @@ h2 {
     display: none;
 }
 
+#side-panel {
+    display: none;
+    color: #606161;
+    line-height: 1.4em;
+}
+
 
 .post{
 	color: #606161;
@@ -134,8 +140,6 @@ h2 {
 	color: #043049;
 	font-weight: 700;
 	float: right;
-	background-color: #e5eecc;
-    border: solid 1px #c3c3c3;
 }
 
 .blog-link-less {
@@ -309,7 +313,12 @@ p.sidebar-container {
 a.sidebar-link {
 	color: #043049;
 	font-weight: 700;
-	float: left;
+}
+
+a.sidebar-close {
+	color: #043049;
+	font-weight: 700;
+	line-height: 2.1em;
 }
 
 li.sidebar-bullet {
