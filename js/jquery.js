@@ -2,10 +2,40 @@
 	$(document).ready(pageReady);
 
 
-/// article links
+
 
 
 	function pageReady() {
+
+///nav links
+
+// $( ".nav-link" ).hover(function showRollover() {
+//     $(".nav-link").addClass(".test") ;
+//   }, function hideRollover() {
+//     $(".nav-link").removeClass(".test");
+//   }
+// );
+
+$( ".nav-link" ).hover(function showRollover() {
+		 event.preventDefault();
+    $(this).addClass("test");
+    $(this).show("thickLine");
+
+ }, function removeRollover() {
+ 		 event.preventDefault();
+    $(this).removeClass("test");
+} );
+
+// function showLine() {
+//     if ( $( ".thickline" ).is( ":hidden" ) ) {
+//     $( ".thickline" ).slideDown( "slow" );
+//     console.log("muffin");
+//   } else {
+//     $( ".thickline" ).hide();
+//   }
+
+
+/// article links
 
 	$(".blog-link").click(function hideLink() {
 		 event.preventDefault();
